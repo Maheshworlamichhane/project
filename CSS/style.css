@@ -1,0 +1,260 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(243, 237, 237); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+    
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  .ram{
+    padding-left: 100px;
+    padding-top: 10px;
+    float: left;
+    width: 100px;
+    height: 5vh;
+    font-family: Serif;
+    font-size: 25px;
+    color: #f1eee5;
+    font-style: italic;
+  
+  }
+
+  .containerbar {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* navbar */
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+  /* Table */
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    /* margin-top: 10px; */
+    float: left;
+    margin-left: 250px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 15px;
+  text-align: left;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: rgb(12, 12, 12);
+  }
+
+
+  /* .bat{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(17, 16, 16);
+  } */
+
+  .footer {/*styling footer bar*/
+    position: fixed;
+    left: 0px;
+    border: 2.5px solid #7fa998;
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    box-sizing: border-box;
+  
+  }
+
+   .head {/*styling header bar*/
+    position: fixed;
+    left: 90px;
+    /* bottom: 10px; */
+    right: 0px;
+    width: 100%;
+    background-color: #867d7d;
+    /* padding-bottom: 5rem; */
+    text-align: center;
+    box-sizing: border-box;
+  
+  } 
+
+  .info{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 36px;
+  }
+
+
+  /* Popup */
+
+  /* {box-sizing: border-box;} */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 60px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #182a2a;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(240, 137, 137);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Contact form */
+.ramos{
+	padding-top: 10px;
+	margin-left: 300px;
+	padding-left: 25px;
+	background-color: white;
+	color: black;
+	width: 500px;
+	height: 73vh;
+	font-family:Arial;
+}
+
+.contact{
+  padding-top: 20px;
+
+}
+
+.extras {
+  margin-top: 25vh;
+  padding: 5px;
+}
+
+.extras h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}

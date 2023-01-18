@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+  <title>Page Title</title>
+  <script src="/js/Script.js"></script>
+  
+  </script>
+  <style>
+    body {
+      background-image: url('/Images/airlines.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }  
+
+  </style>
+  </head>
+
+  <div class = "head">
+  
+    <p id="date"></p>
+
+    <script>
+       function mydate(){
+       var d = new Date();
+       document.getElementById("date").innerHTML = d;
+       setTimeout (mydate,1000)
+       }
+       mydate();
+    </script>
+ </div>
+  <body>
+
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <tr>
+            <th class="ram"><a href="/Index.html" style="text-decoration: none ;color: #4d4b46;">Home</a></th>
+            <th class="ram"><a href="/Page/About.html" style="text-decoration: none; color: #4d4b46; ">About Us</a></th>
+            <th class="ram"><a href="/Page/Contact.html" style="text-decoration: none; color: #4d4b46;">Contact</a></th>
+         </tr>
+        </div>
+        
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()">
+          <div class="containerbar" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div></span>
+
+<div class="contact">
+  <div class="ramos">
+		<h2 style="text-align: center;">Please fill up the form.</h2>
+		<form>
+		<b>First Name:<br><input type="text" id="fname"><br>
+		Last Name:<br><input type="text" id="lname"><br>
+		Email:<br><input type="text" id="email"><br>
+		Phone Number:<br><input type="text" id="phone"><br>
+		Address:<br><input type="text" id="address"><br><br>
+        Message:<br>
+        <textarea placeholder="Type here...." rows ="11" cols="30"
+        id="message"></textarea><br>
+        <button onclick="work()">Submit</button>
+	</form>
+	</b>
+	</div>
+	<script>
+		function work(){
+			let fname=document.getElementById("fname").value;
+			let lname=document.getElementById("lname").value;
+			let email=document.getElementById("email").value;
+			let phone=document.getElementById("phone").value;
+			let address=document.getElementById("address").value;
+			let message=document.getElementById("message").value;
+
+			if(fname==""){
+				alert("Please fill up the form completely.Thank you!!!!!")
+			}
+			else if(lname==""){
+				alert("Please fill up the form completely.Thank you!!!!!")
+			}
+			else if(email==""){
+				alert("Please fill up the form completely.Thank you!!!!!")
+			}
+			else if(phone==""){
+				alert("Please fill up the form completely.Thank you!!!!!")
+			}
+			else if(address==""){
+				alert("Please fill up the form completely.Thank you!!!!!")
+			}
+			else if(message==""){
+				alert("Please fill up the form completely.Thank you!!!!!")
+			}
+			else{
+				alert("You have sucessfully filled up the form.Thank you!!!!!")
+			}
+		}
+	</script><br>
+</div>
+
+
+     <div class = "footer">
+	
+      <p class="pcopy"><a>  Heven Travellers &copy; 2023 - All Rights Reserved</a></p>
+     </div>
+  
+  </body>
+</html>
+

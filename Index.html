@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+  <title>Page Title</title>
+  <script src="/js/Script.js"></script>
+  
+  </script>
+  <style>
+    body {
+      background-image: url('/Images/aeroplane.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+   
+    </style>
+  </head>
+  <div class = "head">
+    <!-- <h4>Current Date and Time:</h4> -->
+    <p id="date"></p>
+
+    <script>
+       function mydate(){
+       var d = new Date();
+       document.getElementById("date").innerHTML = d;
+       setTimeout (mydate,1000)
+       }
+       mydate();
+    </script>
+ </div>
+  <body>
+
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <tr>
+            <th class="ram"><a href="/Index.html" style="text-decoration: none ;color: #4d4b46;">Home</a></th>
+            <th class="ram"><a href="/Page/About.html" style="text-decoration: none; color: #4d4b46; ">About Us</a></th>
+            <th class="ram"><a href="/Page/Contact.html" style="text-decoration: none; color: #4d4b46;">Contact</a></th>
+         </tr>
+        </div>
+        
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()">
+          <div class="containerbar" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div></span>
+
+
+          <div class="info">
+            <marquee>Welcome To Heaven Travellers!!</marquee>  
+            <h3></h3>
+      </div>
+<div>
+
+<table id="customers">
+  <tr>
+    <th>Airline</th>
+    <th>Flight</th>
+    <th>Time</th>
+    <th>From</th>
+    <th>Destination</th>
+  </tr>
+  <tr>
+    <td>Shree Airlines</td>
+    <td>BE854</td>
+    <td>12:25</td>
+    <td>Kathmandu</td>
+    <td>Pokhara</td>
+  </tr>
+  <tr>
+    <td>Yeti Airlines</td>
+    <td>FR6674</td>
+    <td>13:25</td>
+    <td>Kathmandu</td>
+    <td>Biratnagar</td>
+  </tr>
+  <tr>
+    <td>Buddha Airlines</td>
+    <td>LOG9876</td>
+    <td>14:45</td>
+    <td>Kathmandu</td>
+    <td>Jomsom</td>
+  </tr>
+  <tr>
+    <td>Tara Airlines</td>
+    <td>UX3424</td>
+    <td>17:25</td>
+    <td>Kathmandu</td>
+    <td>Jhapa</td>
+  <tr>
+    <td>Shree Airlines</td>
+    <td>OU1869</td>
+    <td>11:05</td>
+    <td>Kathmandu</td>
+    <td>Lumbini</td>
+  </tr>
+  
+</table>
+</div>
+
+<button class="open-button" onclick="openForm()">Book Ticket</button>
+
+<div class="form-popup" id="myForm">
+  <form  class="form-container">
+    <h1>Book Now</h1>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+   
+    <label for="name"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="Phone Number" required>
+
+    <button type="submit" class="btn" >Book</button>
+    
+
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</div>
+        
+     <div class = "footer">
+	
+      <p class="pcopy"><a> Heven Travellers &copy; 2023 - All Rights Reserved </a></p>
+  
+  </body>
+</html>
+
